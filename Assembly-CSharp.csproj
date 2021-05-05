@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SampleScript.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\Partition.cs" />
+    <Compile Include="Assets\Scripts\Beat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
