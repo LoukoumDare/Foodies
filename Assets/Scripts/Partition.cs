@@ -10,6 +10,7 @@ public class Partition : MonoBehaviour
 		PLAY
 	}
 
+
 	public int bpm = 60;
 	public int nbBeat = 6;
 
@@ -38,7 +39,7 @@ public class Partition : MonoBehaviour
 		float delayBetweenBeatSec = bpm / 60;
 		time += Time.deltaTime;
 
-		if (time > nextTimer)
+		if (time > nextTimer - BeatArray[currentIndex].AnnimationStartingTime)
         {
 			BeatArray[currentIndex].Activate();
 			currentIndex++;
