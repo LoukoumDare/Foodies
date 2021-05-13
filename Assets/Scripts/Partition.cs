@@ -10,7 +10,6 @@ public class Partition : MonoBehaviour
 		PLAY
 	}
 
-
 	public int bpm = 60;
 	public int nbBeat = 6;
 
@@ -28,6 +27,7 @@ public class Partition : MonoBehaviour
         {
 			Vector3 pos = transform.position + (i - nbBeat / 2) * new Vector3(BeatPrefab.localScale.x/2, 0, 0);
 			BeatArray[i] = Instantiate(BeatPrefab, pos, Quaternion.identity).GetComponent<Beat>();
+			BeatArray[i].transform.SetParent(this.transform);
 		}
 	}
 
@@ -39,7 +39,7 @@ public class Partition : MonoBehaviour
 		float delayBetweenBeatSec = bpm / 60;
 		time += Time.deltaTime;
 
-		if (time > nextTimer - BeatArray[currentIndex].AnnimationStartingTime)
+		if (time > nextTimer - BeatArray[currentIndex].PermissiveWindow / 2)
         {
 			BeatArray[currentIndex].Activate();
 			currentIndex++;
