@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{FACE45BD-897D-C128-D07C-0BEB132D1CAD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -59,9 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SampleScript.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\GameFlowState.cs" />
     <Compile Include="Assets\Scripts\Beat.cs" />
     <Compile Include="Assets\Scripts\Partition.cs" />
-    <Compile Include="Assets\Scripts\GameFlowState.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

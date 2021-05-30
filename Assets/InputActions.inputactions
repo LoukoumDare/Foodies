@@ -4,8 +4,149 @@
         {
             "name": "Phase1",
             "id": "b5bf0055-fe84-4bae-a39b-b132415c8f3e",
-            "actions": [],
-            "bindings": []
+            "actions": [
+                {
+                    "name": "Beat1",
+                    "type": "Button",
+                    "id": "9378f257-a9d9-4881-b84f-7621c9ec9746",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Beat2",
+                    "type": "Button",
+                    "id": "8b6152da-fff6-466c-9e76-a6e9ae7f41dc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Beat3",
+                    "type": "Button",
+                    "id": "f79e009f-1ec9-4de0-8a66-97147dc52073",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Beat4",
+                    "type": "Button",
+                    "id": "cb19e482-8b96-49ce-811e-74a26d46b6b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DebugMoveToPhase2",
+                    "type": "Button",
+                    "id": "85c7c199-32dc-4b4a-b798-fcf6484d3361",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e5306452-498a-4e53-84a3-7982412df2ad",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard-Mouse",
+                    "action": "Beat4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df8ece64-e592-492b-9468-fe3470814397",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Beat4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5021b6fe-f850-4279-b01a-769e5cf09b79",
+                    "path": "<Keyboard>/2",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard-Mouse",
+                    "action": "DebugMoveToPhase2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "caa6d0ff-7f93-490c-90f8-4c94d60e3ca4",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard-Mouse",
+                    "action": "Beat1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ca377aa7-4d09-4e17-911a-4e324cf4d4c7",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Beat1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb84e673-3d71-4493-9341-d9cdf5415005",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard-Mouse",
+                    "action": "Beat2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8e1c61c-4757-4582-b63b-69a0e1fb6210",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Beat2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dee3e541-dc67-456e-9754-16250f61edc4",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard-Mouse",
+                    "action": "Beat3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c4e6953-42d1-404f-a079-b544af67ed73",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Beat3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         },
         {
             "name": "Phase2",
@@ -39,6 +180,14 @@
                     "name": "Beat4",
                     "type": "Button",
                     "id": "1e626b35-ed25-4f07-8bd0-bc3356c5dbe5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DebugMoveToPhase1",
+                    "type": "Button",
+                    "id": "75d06690-80b9-4464-aad1-36319dbb83cc",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -130,6 +279,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Beat4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8bea0fb3-0dcd-4bc9-96a3-6796e7d9d9d3",
+                    "path": "<Keyboard>/1",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard-Mouse",
+                    "action": "DebugMoveToPhase1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -16,19 +16,28 @@ public class Beat : MonoBehaviour
         BEAT4
     }
 
-    public eInput AssociatedInput = eInput.BEAT1;
+    //TODO Dirty
+    public string[] InputString = new string[] {"?", "A", "Z", "E", "R" };
+
+    public eInput AssociatedInput = eInput.NONE;
+    private TextMesh TextInput;
     private bool IsActive = false;
     public float time = 0;
 
     public float PermissiveWindow = 0.4f;
     public float AnnimationStartingTime = 0.05f; //TODO only for proto, get sth cleaner
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        GameFlowState = GameObject.Find("GameFlowState").GetComponent<GameFlowState>();
         AudioSource = GetComponent<AudioSource>();
         Animator = GetComponent<Animator>();
+        TextInput = GetComponentInChildren<TextMesh>();
+    }
+
+    // Start is called before the first frame updatea
+    void Start()
+    {
+        GameFlowState = GameObject.Find("GameFlow").GetComponent<GameFlowState>();
     }
 
     public void Activate()
@@ -56,10 +65,13 @@ public class Beat : MonoBehaviour
 
     void OnBeat(eInput input)
     {
-
         if (GameFlowState.currentGameState == GameFlowState.eGameState.PHASE1)
         {
-
+            if (IsActive)
+            {
+                AssociatedInput = input;
+                TextInput.text = InputString[(int)input];
+            }
         }
         else if (GameFlowState.currentGameState == GameFlowState.eGameState.PHASE2)
         {
